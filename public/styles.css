@@ -2,16 +2,17 @@
     text-align: center;
     width: 100%;
     display: flex;
-    background-color: #9f9f9f;
+    background-color: rgb(33, 32, 34);
 }
 
 .footer {
+    font-family: sans-serif;
     font-weight: bold;
     color: white;
     font-size: 20px;
     width: 100%;
     height: 200px;
-    background-color: #505050;
+    background-color: rgb(33, 32, 34);
 }
 .registration {
     align-items: center;
@@ -88,7 +89,7 @@
     font-size: 25px;
     height: 60px;
     width: 100%;
-    background-color: silver;
+    background-color: rgb(18, 18, 18);
     border: solid white 1px;
 }
 .images-div {
@@ -102,6 +103,8 @@
 }
 .images {
     position: absolute;
+    bottom: 0;
+    right: 0;
     top: 0;
     left: 0;
     height: 100%;
@@ -134,7 +137,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
+    background-color: rgb(0, 155, 231);
 }
 .active {
     background-color: #4caf50;
@@ -178,4 +181,69 @@ li a:hover {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+/* ////////Player Profile//////////////////////////////////////////////////////// */
+
+.Player-main-div {
+    height: 800px;
+    background-image: url("backgroundpic2.png");
+    background-position: center;
+    background-size: cover;
+}
+.player-image-div {
+    height: 300px;
+    background: black;
+    border: solid white 1px;
+    opacity: 0.3;
+}
+/* .player-image {
+    width: 33%;
+    margin: auto;
+    height: 300px;
+    background-color: #ffffff;
+    border: black 1px solid;
+    opacity: 0.7;
+} */
+.profile-info {
+    border-radius: white 1px solid;
+    height: auto;
+}
+#names {
+    text-shadow: black 4px 4px;
+    font-family: Helvetica Neue;
+    color: white;
+    margin: auto;
+}
+.names-div {
+    width: 50%;
+    margin: auto;
+    border: 1px white solid;
+    border-radius: 15px;
+}
+.props {
+    text-shadow: black 4px 4px;
+    color: silver;
+    font-family: fantasy;
+    font-size: 25px;
+    height: 60px;
+    display: flex;
+}
+.login-div {
+    border: black 1px solid;
+    background-image: url("rugbyball.png");
+    height: 400px;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+.login-mini {
+    display: flex;
+    border: white 1px solid;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.7;
+}
+#Lbutton {
+    position: relative;
+    left: 34px;
 }
