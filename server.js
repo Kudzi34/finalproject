@@ -107,5 +107,11 @@ app.post("/login", (req, res) => {
             });
         });
 });
+///////////////////////////////fixtures page///////////////////////////////////
 
+app.get("/fixtures", (req, res) => {
+    res.render("fixtures", {
+        layout: "main"
+    });
+});
 app.listen(process.env.PORT || 8080, () => "I am listening, Master");
