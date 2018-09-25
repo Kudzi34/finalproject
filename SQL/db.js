@@ -19,3 +19,17 @@ exports.saveUser = (firstname, lastname, email, hashedpassword) => {
 exports.getUsers = function() {
     return db.query("SELECT * FROM users");
 };
+
+exports.getPlayers = function() {
+    return db.query("SELECT * FROM players");
+};
+exports.getPlayerInfoById = id => {
+    console.log("working getPlayerInfoById!");
+    return db.query(
+        `SELECT *
+		 FROM players
+		 WHERE id = $1
+			`,
+        [id]
+    );
+};

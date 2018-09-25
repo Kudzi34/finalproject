@@ -114,4 +114,29 @@ app.get("/fixtures", (req, res) => {
         layout: "main"
     });
 });
+
+///////////////////////players profile/////////////////////////////////////////
+
+app.get("/players", (req, res) => {
+    console.log("req:", req.body);
+    db.getPlayers().then(results => {
+        console.log("results:", results.rows);
+        res.render("players", {
+            layout: "main",
+            players: results.rows
+        });
+    });
+});
+
+app.get("/player/:playerId", (req, res) => {
+    db.getPlayerInfoById(req.params.playerId).then(results => {
+        console.log("results:", results);
+        res.render("player", {
+            layout: "main",
+            playerInfo: results.rows[0]
+        }).catch(error => {
+            console.log("Error in get player:", error);
+        });
+    });
+});
 app.listen(process.env.PORT || 8080, () => "I am listening, Master");

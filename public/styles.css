@@ -257,3 +257,7 @@ li a:hover {
 
     background-size: cover;
 }
+.players-div {
+    height: 400px;
+    background-color: silver;
+}
