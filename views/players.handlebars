@@ -1,18 +1,37 @@
-<!DOCTYPE HTML>
-<div class="players-div">
+</style>
+</head>
+<body>
 
+<h2>PLAYER STATISTICS</h2>
 
-<div class="Playersbox">
-    <h1 id="players">  {{count}} PLAYERS ROSTER: </h1>
+<table>
+  <tr>
+    <th>Picture</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Nickname</th>
+    <th>Position</th>
+    <th>Weight</th>
+    <th>Height</th>
+    <th>Age</th>
+    <th>Country</th>
+  </tr>
 
-<ul class="players-div3">
-    {{#each players}}
+  {{#each players}}
+      <tr>
+          <td><a><img src="/playerImgs/{{ imageurl }}"/></a></td>
+          <td>{{ firstname }}</td>
+          <td>{{ lastname }}</td>
+          <td>{{ nickname }}</td>
+          <td>{{ position }}</td>
+          <td>{{ weight }}</td>
+          <td>{{ height }}</td>
+          <td>{{ age }}</td>
+          <td>{{ country}}</td>
+      </tr>
+{{/each}}
 
-        <li> {{firstname}} {{lastname}},{{nickname}},{{position}},{{weight}},{{height}} {{age}},  {{country}}</li>
+</table>
 
-    {{/each}}
-
-</ul>
-</div>
-
-</div>
+</body>
+</html>

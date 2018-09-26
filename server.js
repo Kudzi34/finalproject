@@ -139,4 +139,10 @@ app.get("/player/:playerId", (req, res) => {
         });
     });
 });
+
+app.post("/logout", (req, res) => {
+    req.session = null;
+    res.render("/login");
+});
+
 app.listen(process.env.PORT || 8080, () => "I am listening, Master");

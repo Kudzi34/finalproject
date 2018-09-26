@@ -261,3 +261,29 @@ li a:hover {
     height: 400px;
     background-color: silver;
 }
+
+/* /////////////Table///////////////////////////////////////////////////////////// */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: black;
+}
+th {
+    border-collapse: collapse;
+    height: 50px;
+    font-size: 30px;
+    background-color: silver;
+}
+td {
+    border-collapse: collapse;
+    font-size: 30px;
+    font-family: fantasy;
+}
+tr {
+}
+tr:hover {
+    background-color: slategray;
+}
+td:hover {
+    color: white;
+}
