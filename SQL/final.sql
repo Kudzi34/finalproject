@@ -22,8 +22,7 @@ CREATE TABLE players(
     country VARCHAR(255) NOT NULL
 );
 
-INSERT INTO players (imageUrl,firstname, lastname, nickname, position, weight, height, age, country)
-VALUES ('Kudzai_Nyakunu.png','Kudzai', 'Nyakunu', 'Bhuru', 'Center', '90kg', '1.75cm', 35, 'Zimbabwe');
+
 INSERT INTO players (imageUrl,firstname, lastname, nickname, position, weight, height, age, country)
 VALUES ('Will_Krause.png','Will', 'Krause', 'Bigboi', 'prop', '127kg', '1.87cm', 24, 'England');
 INSERT INTO players (imageUrl,firstname, lastname, nickname, position, weight, height, age, country)
