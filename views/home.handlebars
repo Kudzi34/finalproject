@@ -1,12 +1,12 @@
 <div class="registration">
     <div class="register">
-        <h1>Please Register!</h2>
+        <h1 id="registerh1">Please Register!</h2>
 
         <form class="regform" method="post">
-            <input class="input"type="text" name="firstname" placeholder="firstname">
-            <input class="input"type="text" name="lastname" placeholder="lastname">
-            <input  class="input"type="text" name="email" placeholder="email">
-            <input class="input"type="text" name="password" placeholder="password">
+            <input class="input"type="text" name="firstname" placeholder="firstname" autocomplete ="off"/>
+            <input class="input"type="text" name="lastname" placeholder="lastname" autocomplete ="off">
+            <input  class="input"type="text" name="email" placeholder="email" autocomplete ="off">
+            <input class="input"type="text" name="password" placeholder="password" autocomplete ="off">
             <button id="Rbutton"class="button"type="submit">SUBMIT</button>
             <input name="_csrf" value="{{csrfToken}}" type="hidden">
         </form>
